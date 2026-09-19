@@ -1,0 +1,52 @@
+%YAML:1.0
+
+# Template for the D435 live application. Camera1 intrinsics below are only a
+# fallback snapshot. apps/mono_d435.cpp writes an effective copy in the build
+# directory with the active IR1 profile intrinsics before constructing System.
+File.version: "1.0"
+
+Camera.type: "PinHole"
+Camera1.fx: 384.421020508
+Camera1.fy: 384.421020508
+Camera1.cx: 319.511260986
+Camera1.cy: 239.229202271
+Camera1.k1: 0.0
+Camera1.k2: 0.0
+Camera1.p1: 0.0
+Camera1.p2: 0.0
+Camera1.k3: 0.0
+
+Camera.width: 640
+Camera.height: 480
+Camera.fps: 30
+Camera.RGB: 0
+
+# RealSense capture settings, consumed by apps/mono_d435.cpp only.
+Camera.infraredIndex: 1
+Camera.emitterEnabled: 0
+Camera.autoExposure: 1
+Camera.autoExposureLimitUs: 5000
+Camera.warmupFrames: 30
+Camera.frameTimeoutMs: 250
+
+ORBextractor.nFeatures: 1250
+ORBextractor.scaleFactor: 1.2
+ORBextractor.nLevels: 8
+ORBextractor.iniThFAST: 20
+ORBextractor.minThFAST: 7
+
+Viewer.KeyFrameSize: 0.05
+Viewer.KeyFrameLineWidth: 1.0
+Viewer.GraphLineWidth: 0.9
+Viewer.PointSize: 2.0
+Viewer.CameraSize: 0.08
+Viewer.CameraLineWidth: 1.0
+Viewer.ViewpointX: 0.0
+Viewer.ViewpointY: -0.7
+Viewer.ViewpointZ: -3.5
+Viewer.ViewpointF: 500.0
+Viewer.imageViewScale: 1.0
+
+loopClosing: 1
+System.thFarPoints: 0.0
+

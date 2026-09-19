@@ -1,0 +1,10 @@
+/build/
+/cmake-build-*/
+*.osa
+*.tum
+CameraTrajectory.txt
+KeyFrameTrajectory.txt
+/output/
+/Vocabulary/
+/.idea/
+compile_commands.json
